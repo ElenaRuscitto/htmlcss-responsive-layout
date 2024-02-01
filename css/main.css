@@ -77,16 +77,18 @@ body {
 .menu {
   background-color: var(--h-bg-color);
 }
-
+.header {
+  position: fixed;   
+  top: 0;
+  left: 0;
+}
 .menu .container-header {
   color: var(--text-color);
   height: 76px;    /*  debug */
-  width: 99%;
+  width: 100%;
   margin: 0 auto;
   max-width: 1200px;
-  /* position: fixed;   
-  top: 0;
-  left: 0; */
+
 }
 
 .logo,
@@ -200,6 +202,15 @@ body {
 
 /* DISPLAY TABLET */
 @media screen and (min-width: 768px){
+  .card-big {
+    width: 60%;
+    height: 560px;
+  }
+
+  .card-small {
+    width: 30%;
+    height: 560px;
+  }
 
   
 }
