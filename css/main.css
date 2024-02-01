@@ -54,6 +54,23 @@ body {
   flex-flow: column;
 }
 
+.card-small {
+  height: 400px;   /* debug */
+}
+
+.card-media {
+  height: 550px;   /* debug */
+  background-color: var(--v-bg-color);
+}
+
+.card-big {
+  height: 600px;   /* debug */
+}
+
+.card-exbig {
+  height: 800px;   /* debug */
+}
+
 
 /* HEADER */
 .menu {
@@ -104,19 +121,11 @@ body {
 
 .card-small,
 .card-media,
-.card-big {
+.card-big,
+.card-exbig {
   width: 310px;
   margin-bottom: 25px;
 }
-
-.card-big {
-  height: 600px;   /* debug */
-}
-
-.card-small {
-  height: 400px;   /* debug */
-}
-
 
 .demo .card-big,
 .demo .card-small {
@@ -142,10 +151,30 @@ body {
   background-color: var(--v-bg-color);
 }
 
-.card-media {
-  height: 550px;   /* debug */
-}
+
 /* /PLANNING */
+
+/* TESTIMONIALS */
+.testo-centrato {
+  text-align: center;
+}
+
+/* /TESTIMONIALS */
+
+/* BENEFITS */
+
+.benefit {
+  background-color: var(--v-bg-color);
+}
+
+/* /BENEFITS */
+
+
+
+
+
+
+
 
 
 /************************************************
