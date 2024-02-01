@@ -50,6 +50,9 @@ body {
   flex-wrap: wrap;
 }
 
+.column {
+  flex-flow: column;
+}
 
 
 /* HEADER */
@@ -100,6 +103,7 @@ body {
 }
 
 .card-small,
+.card-media,
 .card-big {
   width: 310px;
   margin-bottom: 25px;
@@ -112,6 +116,7 @@ body {
 .card-small {
   height: 400px;   /* debug */
 }
+
 
 .demo .card-big,
 .demo .card-small {
@@ -130,9 +135,17 @@ body {
   margin: 5px;
 }  */
 
+/* /DEMO */
 
+/* PLANNING */
+.planning {
+  background-color: var(--v-bg-color);
+}
 
-
+.card-media {
+  height: 550px;   /* debug */
+}
+/* /PLANNING */
 
 
 /************************************************
