@@ -162,7 +162,6 @@ body {
 /* /TESTIMONIALS */
 
 /* BENEFITS */
-
 .benefit {
   background-color: var(--v-bg-color);
 }
@@ -170,9 +169,16 @@ body {
 /* /BENEFITS */
 
 
+/* ABOUT */
+
+/* /ABOUT */
 
 
-
+/* FREE */
+.free {
+  background-color: var(--v-bg-color);
+}
+/* /FREE */
 
 
 
