@@ -73,6 +73,7 @@ body {
 
 
 /* HEADER */
+
 .menu {
   background-color: var(--h-bg-color);
 }
@@ -83,6 +84,9 @@ body {
   width: 99%;
   margin: 0 auto;
   max-width: 1200px;
+  /* position: fixed;   
+  top: 0;
+  left: 0; */
 }
 
 .logo,
@@ -90,8 +94,7 @@ body {
   align-items: center;
   font-size: 2rem;
   padding: 0 37px;
-
-}
+  }
 
 .lista {
   align-items: center;
@@ -116,7 +119,7 @@ body {
 /* DEMO */
 
 .demo {
-  /* height: 3580px;     debug */
+  margin-top: 76px; /*  fixed */
 }
 
 .card-small,
@@ -193,6 +196,16 @@ body {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
+
+
+/* DISPLAY TABLET */
+@media screen and (min-width: 768px){
+
+  
+}
+
+
+
 
  /* DEMO */
  /* @media screen and (min-whid: 375px){
