@@ -34,7 +34,6 @@ body {
 .container {
   width: 99%;
   margin: 0 auto;
-  /* max-width: 1200px; */
 }
 
 .padding-l-r {
@@ -124,7 +123,7 @@ header {
 }
 
 /* view desktop */
-.lista .desktop {
+.menu .lista .desktop {
   display: none;
 }
 /* HEADER */
@@ -235,18 +234,32 @@ header {
 
 /* DISPLAY PC */
 
+@media screen and (min-width: 1200px){
+  .menu .lista .desktop {
+    display: block;
+  }
 
+  .menu .lista .hamburger {
+    display: none;
+  }
 
+  .planning .row .card-exbig,
+  .planning .row .card-big{
+    max-width: calc(100% / 2);
+  }
 
- /* DEMO */
- /* @media screen and (min-whid: 375px){
-  /* .demo {
-    width: 100%;
-  } */
-
-  /* .colonna {
-    width: 600px;
-    height: 310px;
+  .planning .row {
+    flex-direction: row;
+  }
+  .planning .row .card-big{
+    margin-top: 100px;
+  }
+  .container {
+    max-width: 1200px;
   }
   
- } */
+}
+
+
+
+
