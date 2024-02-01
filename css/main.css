@@ -1,0 +1,73 @@
+/* :root {
+  first-background-color:rgb(0, 132, 253);
+  -- background-color: rgb(151, 146, 228);
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+
+/* utility */
+
+.debug {
+  border: 1px solid black;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+
+
+/* HEADER */
+.container-header {
+  background-color:rgb(0, 132, 253);
+  color: white;
+  height: 76px;    /*  debug */
+
+}
+
+.logo,
+.hamburger {
+  align-items: center;
+  font-size: 2rem;
+  margin: 0 37px;
+}
+.lista {
+  align-items: center;
+}
+
+.lista ul {
+  list-style: none;
+}
+
+.lista ul li {
+  padding-left: 30px; 
+  font-size: 15px;
+}
+
+/* view desktop */
+.lista .desktop {
+  display: none;
+}
