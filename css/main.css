@@ -34,7 +34,12 @@ body {
 .container {
   width: 99%;
   margin: 0 auto;
-  max-width: 1200px;
+  /* max-width: 1200px; */
+}
+
+.padding-l-r {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .padding-t-b {
@@ -56,6 +61,10 @@ body {
 
 .card-small {
   height: 400px;   /* debug */
+}
+
+.benefit .card-small {
+  width: 310px;   /* debug */
 }
 
 .card-media {
@@ -140,17 +149,6 @@ header {
   background-color: rgb(181, 221, 255);
 }
 
-/* .colonna.colonna-big {
-  width: 65%;
-  aspect-ratio: 2/1;
-}
-
-.colonna {
-  width: 32%;
-  height: 33%; debug
-  aspect-ratio: 1/1;
-  margin: 5px;
-}  */
 
 /* /DEMO */
 
@@ -205,20 +203,37 @@ header {
 
 /* DISPLAY TABLET */
 @media screen and (min-width: 768px){
-  .card-big {
+  .demo .card-big {
     width: 60%;
-    height: 560px;
+    height: 437px;
     margin-right: 10px;
   }
 
-  .card-small {
+  .demo .card-small {
     width: 30%;
-    height: 560px;
+    height: 437px;
     margin-right: 10px;
   }
+  .planning .card-exbig {
+    height: 885px;
+  }
 
-  
+  .planning .card-big {
+    height: 830px;
+  }
+
+  .testimonial .card-media {
+    height: 220px;
+  }
+
+  .benefit .card-small {
+    height: 417px;
+    width: calc (100% / 2);
+  }
+
 }
+
+/* DISPLAY PC */
 
 
 
