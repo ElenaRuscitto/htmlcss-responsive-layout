@@ -1,7 +1,8 @@
-/* :root {
-  first-background-color:rgb(0, 132, 253);
-  -- background-color: rgb(151, 146, 228);
-} */
+:root {
+    --h-bg-color:rgb(0, 132, 253);
+    --v-bg-color: rgb(151, 146, 228);
+    --text-color: white;
+}
 
 * {
   margin: 0;
@@ -22,6 +23,12 @@ body {
 
 .d-flex {
   display: flex;
+
+}
+
+.d-center {
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -42,8 +49,8 @@ body {
 
 /* HEADER */
 .container-header {
-  background-color:rgb(0, 132, 253);
-  color: white;
+  background-color: var(--h-bg-color);
+  color: var(--text-color);
   height: 76px;    /*  debug */
 
 }
@@ -52,7 +59,7 @@ body {
 .hamburger {
   align-items: center;
   font-size: 2rem;
-  margin: 0 37px;
+  padding: 0 37px;
 }
 .lista {
   align-items: center;
@@ -70,4 +77,26 @@ body {
 /* view desktop */
 .lista .desktop {
   display: none;
+}
+/* HEADER */
+
+
+/* DEMO */
+
+.demo {
+  height: 3580px;    /*  debug */
+
+}
+
+.colonna.colonna-big {
+  width: 65%;
+  aspect-ratio: 2/1;
+}
+
+.colonna {
+  background-color: rgb(181, 221, 255);
+  width: 32%;
+  height: 33%; /*  debug */
+  aspect-ratio: 1/1;
+  margin: 5px;
 }
