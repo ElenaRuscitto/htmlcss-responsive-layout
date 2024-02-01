@@ -32,9 +32,14 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 99%;
   margin: 0 auto;
+  max-width: 1200px;
+}
 
+.padding-t-b {
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .space-between {
@@ -48,11 +53,16 @@ body {
 
 
 /* HEADER */
-.container-header {
+.menu {
   background-color: var(--h-bg-color);
+}
+
+.menu .container-header {
   color: var(--text-color);
   height: 76px;    /*  debug */
-
+  width: 99%;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .logo,
@@ -60,7 +70,9 @@ body {
   align-items: center;
   font-size: 2rem;
   padding: 0 37px;
+
 }
+
 .lista {
   align-items: center;
 }
@@ -84,19 +96,58 @@ body {
 /* DEMO */
 
 .demo {
-  height: 3580px;    /*  debug */
-
+  /* height: 3580px;     debug */
 }
 
-.colonna.colonna-big {
+.card-small,
+.card-big {
+  width: 310px;
+  margin-bottom: 25px;
+}
+
+.card-big {
+  height: 600px;   /* debug */
+}
+
+.card-small {
+  height: 400px;   /* debug */
+}
+
+.demo .card-big,
+.demo .card-small {
+  background-color: rgb(181, 221, 255);
+}
+
+/* .colonna.colonna-big {
   width: 65%;
   aspect-ratio: 2/1;
 }
 
 .colonna {
-  background-color: rgb(181, 221, 255);
   width: 32%;
-  height: 33%; /*  debug */
+  height: 33%; debug
   aspect-ratio: 1/1;
   margin: 5px;
-}
+}  */
+
+
+
+
+
+
+/************************************************
+    SOLUZIONE RESPONSIVE
+ ************************************************/
+
+ /* DEMO */
+ /* @media screen and (min-whid: 375px){
+  /* .demo {
+    width: 100%;
+  } */
+
+  /* .colonna {
+    width: 600px;
+    height: 310px;
+  }
+  
+ } */
