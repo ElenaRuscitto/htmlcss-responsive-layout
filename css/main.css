@@ -292,6 +292,32 @@ header {
   color: rgb(151, 146, 228)
 }
 
+.testimonial .left img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial .row  {
+margin: 0 100px;
+}
+
+
+
+
+.testimonial .row .card-media {
+  width: 100%;
+  border-radius: 50px;
+  color: white;
+}
+
+
+
+.card-media .left {
+  margin: 0 auto;
+}
+
 /* /TESTIMONIALS */
 
 /* BENEFITS */
@@ -375,15 +401,26 @@ header {
   .planning .card-big p {
     font-size: 0.7rem;
   }
-
-  /* .planning i {
-    margin-bottom: 100px;
-  } */
-
-
+  
   .testimonial .card-media {
-    height: 220px;
+    width: 300px;
+  } 
+
+  .testimonial .card-media .left {
+    width: 20%;
   }
+
+  .testimonial .card-media .right {
+    width: 70%;
+    font-size: 0.8rem;
+    padding: 0 20px;
+  }
+
+  .testimonial .left img {
+    width: 150px;
+    height: 150px;
+   }
+  
 
   .benefit .card-small {
     height: 417px;
@@ -455,6 +492,22 @@ header {
   .planning i {
     margin-bottom: 20px;
   }
+
+  .testimonial .card-media .left {
+    width: 20%;
+  }
+
+  .testimonial .card-media .right {
+    width: 80%;
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+
+  .testimonial .left img {
+    width: 200px;
+    height: 200px;
+    padding: 10px 10px;
+   }
 
   .container {
     max-width: 1200px;
