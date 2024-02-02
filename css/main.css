@@ -57,6 +57,10 @@ body {
   margin-top: 20px;
 }
 
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
 .space-between {
   justify-content: space-between;
 }
@@ -116,6 +120,14 @@ body {
   text-decoration: none;
   padding: 7px 40px;
  
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  font-size: 2.5rem;
 }
 
 /* HEADER */
@@ -225,12 +237,59 @@ header {
   background-color: var(--v-bg-color);
 }
 
+.planning .card-exbig{
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.planning .card-exbig h2 {
+  color: white;
+  margin-top: 40px;
+}
+
+.planning .card-big h2 {
+  font-size: 1.5rem;
+}
+
+.planning .card-exbig p {
+  font-size: 1rem;
+  color: white;
+}
+
+.planning .card-big p {
+  font-size: 1rem;
+  color: black;
+}
+
+.planning .card-big {
+  background-color: white;
+  border-radius: 25px;
+  margin: 0 auto;
+}
+
+.planning .card-big img {
+  margin: 10px;
+}
+
+.planning i {
+  background-color: var(--v-bg-color);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding-top: 15px;
+  margin: 0 auto 40px;
+}
+
 
 /* /PLANNING */
 
 /* TESTIMONIALS */
 .testo-centrato {
   text-align: center;
+}
+
+.testimonial h2 {
+  color: rgb(151, 146, 228)
 }
 
 /* /TESTIMONIALS */
@@ -302,8 +361,25 @@ header {
   }
 
   .planning .card-big {
-    height: 830px;
+     width: 93%;
   }
+
+  .planning .card-big h2 {
+    font-size: 1rem;
+  }
+
+  .planning .card-exbig p {
+    font-size: 0.7rem;
+  }
+
+  .planning .card-big p {
+    font-size: 0.7rem;
+  }
+
+  /* .planning i {
+    margin-bottom: 100px;
+  } */
+
 
   .testimonial .card-media {
     height: 220px;
@@ -354,10 +430,32 @@ header {
     flex-direction: row;
   }
 
-  .planning .row .card-big{
-    margin-top: 100px;
+  .planning .row .card-exbig{
+    padding-top: 80px;
+    padding-left: 80px;
   }
-  
+
+  .planning .row .card-exbig h2{
+    padding-top: 90px;
+  }
+
+  .planning .row .card-exbig img{
+    width: 400px;
+  }
+
+  .planning .row .colonna .card-big{
+   margin-top: 350px;
+   margin-right: 280px;
+  }
+
+  .planning .row .card-big{
+    margin-top: 150px;
+  }
+
+  .planning i {
+    margin-bottom: 20px;
+  }
+
   .container {
     max-width: 1200px;
   }
