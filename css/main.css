@@ -64,6 +64,11 @@ body {
 .wrap {
   flex-wrap: wrap;
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
 
 .column {
   flex-flow: column;
@@ -71,7 +76,7 @@ body {
 
 .colonna{
   width: 100%;
-  padding: 10px;
+  padding: 5px;
 }
 
 .card-small {
@@ -198,7 +203,7 @@ header {
 
 .demo .card-big img {
   width: 40%;
-  height: 30%;
+
 }
 
 .card-small p {
@@ -269,18 +274,29 @@ header {
   .container {
     max-width: 720px;
   }
+
   .demo .row {
     flex-direction: row;
-    flex-wrap: wrap;
+    
   }
 
-  .demo .colonna:first-child {
-    width: calc(100% / 1.5);
+  .demo .row .colonna:nth-child(1) {
+   min-width: calc(100% / 1.5);
+   
   }
 
-  .demo .colonna {
+  .demo .row .colonna {
     width: calc(100% / 3);
   }
+
+  .demo .colonna .card-small{
+    aspect-ratio: 1/2;
+  }
+
+  .demo .colonna:nth-child(2) .card-small {
+    aspect-ratio: 1/1.8;
+  }
+
   .planning .card-exbig {
     height: 885px;
   }
@@ -311,6 +327,24 @@ header {
     display: none;
   }
 
+  .demo .row .card-big {
+    display: flex;
+    aspect-ratio: 3/1.45;
+  }
+
+  .demo .row .card-big img {
+    width: 85.5%;
+    margin-top: 50px;
+  }
+
+  .demo .colonna .card-small {
+    aspect-ratio: 1/1;
+  }
+
+  .demo .colonna:nth-child(2) .card-small {
+    aspect-ratio: 1/.98;
+  }
+
   .planning .row .card-exbig,
   .planning .row .card-big{
     max-width: calc(100% / 2);
@@ -319,9 +353,11 @@ header {
   .planning .row {
     flex-direction: row;
   }
+
   .planning .row .card-big{
     margin-top: 100px;
   }
+  
   .container {
     max-width: 1200px;
   }
