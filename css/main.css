@@ -119,7 +119,13 @@ body {
   color: white;
   text-decoration: none;
   padding: 7px 40px;
- 
+ }
+
+ .btn.viola {
+  background-color: rgb(151, 146, 228);
+  color: white;
+  text-decoration: none;
+  padding: 7px 5px;
 }
 
 img {
@@ -300,11 +306,8 @@ header {
 }
 
 .testimonial .row  {
-margin: 0 100px;
+ margin: 0 100px;
 }
-
-
-
 
 .testimonial .row .card-media {
   width: 100%;
@@ -312,7 +315,9 @@ margin: 0 100px;
   color: white;
 }
 
-
+.testimonial p {
+  padding-left: 10px;
+}
 
 .card-media .left {
   margin: 0 auto;
@@ -323,6 +328,29 @@ margin: 0 100px;
 /* BENEFITS */
 .benefit {
   background-color: var(--v-bg-color);
+}
+
+.benefit h2 {
+  color: white;
+}
+
+.benefit .card-small h2,h3 {
+  color: rgb(151, 146, 228);
+}
+
+.benefit .card-small h2,h3,p {
+    text-align: left;
+}
+
+.benefit .card-small {
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 10px 5px ;
+}
+
+.benefit .colonna {
+  margin: 0 120px;
 }
 
 /* /BENEFITS */
@@ -421,10 +449,8 @@ margin: 0 100px;
     height: 150px;
    }
   
-
-  .benefit .card-small {
-    height: 417px;
-    width: calc (100% / 2);
+  .benefit .row .card-small {
+    width: calc(100% / 2.5);
   }
 
 }
@@ -513,6 +539,9 @@ margin: 0 100px;
     max-width: 1200px;
   }
   
+  .benefit .row .card-small {
+    width: calc(100% / 3.5);
+  }
 }
 
 
