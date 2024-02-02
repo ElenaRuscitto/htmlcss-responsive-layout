@@ -2,6 +2,7 @@
     --h-bg-color:rgb(0, 132, 253);
     --v-bg-color: rgb(151, 146, 228);
     --text-color: white;
+    --text-color-demo: rgb(0, 132, 253);
 }
 
 * {
@@ -25,10 +26,16 @@ body {
   display: flex;
 
 }
-
 .d-center {
   justify-content: center;
+}
+
+.a-center {
   align-items: center;
+}
+
+.t-center {
+  text-align: center;
 }
 
 .container {
@@ -46,6 +53,10 @@ body {
   padding-bottom: 70px;
 }
 
+.margin-top {
+  margin-top: 20px;
+}
+
 .space-between {
   justify-content: space-between;
 }
@@ -58,32 +69,56 @@ body {
   flex-flow: column;
 }
 
+.colonna{
+  width: 100%;
+  padding: 10px;
+}
+
 .card-small {
-  height: 400px;   /* debug */
+  /* height: 400px;   debug */
 }
 
 .benefit .card-small {
-  width: 310px;   /* debug */
+  /* width: 310px;   debug */
 }
 
 .card-media {
-  height: 550px;   /* debug */
+  /* height: 550px;   debug */
   background-color: var(--v-bg-color);
 }
 
 .card-big {
-  height: 600px;   /* debug */
+  /* height: 600px;   debug */
 }
 
 .card-exbig {
-  height: 800px;   /* debug */
+  /* height: 800px;   debug */
 }
 
+.btn {
+  padding: 7px 10px;
+  border-radius: 20px;
+}
+
+.btn.white {
+  background-color: white;
+  color: black;
+}
+
+.btn.blu {
+  background-color: var(--h-bg-color);
+  color: white;
+  text-decoration: none;
+  padding: 7px 40px;
+ 
+}
 
 /* HEADER */
 
 .menu {
   background-color: var(--h-bg-color);
+  color: white;
+  
 }
 
 header {
@@ -102,7 +137,11 @@ header {
 
 }
 
-.logo,
+.logo {
+  align-items: center;
+  padding: 0 37px;
+  }
+
 .hamburger {
   align-items: center;
   font-size: 2rem;
@@ -119,12 +158,17 @@ header {
 
 .lista ul li {
   padding-left: 30px; 
-  font-size: 15px;
+  font-size: 12px;
 }
 
 /* view desktop */
 .menu .lista .desktop {
   display: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--text-color);
 }
 /* HEADER */
 
@@ -139,15 +183,35 @@ header {
 .card-media,
 .card-big,
 .card-exbig {
-  width: 85%;
-  margin-bottom: 25px;
+  width: 100%;
+  line-height: 1.6;
+  
 }
 
 .demo .card-big,
 .demo .card-small {
   background-color: rgb(181, 221, 255);
+  color: var(--text-color-demo);
+  border-radius: 20px;
+  padding: 20px 20px 0 20px;
 }
 
+.demo .card-big img {
+  width: 40%;
+  height: 30%;
+}
+
+.card-small p {
+  color: rgb(90, 110, 127);
+}
+
+.card-big p {
+  color: rgb(90, 110, 127);
+}
+
+.demo .card-small .fa-solid {
+  font-size: 70px;
+}
 
 /* /DEMO */
 
@@ -202,16 +266,20 @@ header {
 
 /* DISPLAY TABLET */
 @media screen and (min-width: 768px){
-  .demo .card-big {
-    width: 60%;
-    height: 437px;
-    margin-right: 10px;
+  .container {
+    max-width: 720px;
+  }
+  .demo .row {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  .demo .card-small {
-    width: 30%;
-    height: 437px;
-    margin-right: 10px;
+  .demo .colonna:first-child {
+    width: calc(100% / 1.5);
+  }
+
+  .demo .colonna {
+    width: calc(100% / 3);
   }
   .planning .card-exbig {
     height: 885px;
