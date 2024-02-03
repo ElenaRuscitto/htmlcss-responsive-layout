@@ -123,8 +123,6 @@ body {
 
  .btn.viola {
   background-color: rgb(151, 146, 228);
-  color: white;
-  text-decoration: none;
   padding: 7px 5px;
 }
 
@@ -217,6 +215,11 @@ header {
   color: var(--text-color-demo);
   border-radius: 20px;
   padding: 20px 20px 0 20px;
+}
+
+.demo .card-big h3,
+.demo .card-small h3 {
+  color: var(--text-color-demo);
 }
 
 .demo .card-big img {
@@ -330,8 +333,9 @@ header {
   background-color: var(--v-bg-color);
 }
 
-.benefit h2 {
+.benefit h2,a {
   color: white;
+  text-decoration: none;
 }
 
 .benefit .card-small h2,h3 {
@@ -345,13 +349,15 @@ header {
 .benefit .card-small {
   background-color: white;
   border-radius: 25px;
-  padding: 20px;
-  margin: 10px 5px ;
+  padding: 40px;
+  margin: 10px 50px;
+  height: 400px;
+  width: 320px;
 }
 
-.benefit .colonna {
-  margin: 0 120px;
-}
+/* .benefit .colonna {
+  margin: 0 70px;
+} */
 
 /* /BENEFITS */
 
@@ -451,6 +457,8 @@ header {
   
   .benefit .row .card-small {
     width: calc(100% / 2.5);
+    height: 410px;
+    margin: 10px;
   }
 
 }
