@@ -351,18 +351,32 @@ header {
   border-radius: 25px;
   padding: 40px;
   margin: 10px 50px;
-  height: 400px;
-  width: 320px;
+  height: 460px;
+  width: 370px;
 }
 
-/* .benefit .colonna {
-  margin: 0 70px;
-} */
+.benefit .btn.viola {
+  margin-top: 60px;
+}
 
 /* /BENEFITS */
 
 
 /* ABOUT */
+
+.about {
+  text-align: left;
+  margin: 0 100px;
+}
+
+.about h2 {
+  color: var(--v-bg-color);
+}
+
+.about p {
+  line-height: 2;
+}
+
 
 /* /ABOUT */
 
@@ -461,6 +475,10 @@ header {
     margin: 10px;
   }
 
+  .benefit .btn.viola {
+    margin-top: 15px;
+  }
+
 }
 
 /* DISPLAY PC */
@@ -549,6 +567,10 @@ header {
   
   .benefit .row .card-small {
     width: calc(100% / 3.5);
+  }
+  
+  .benefit .btn.viola {
+    margin-top: 25px;
   }
 }
 
