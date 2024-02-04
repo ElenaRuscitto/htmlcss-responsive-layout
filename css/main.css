@@ -375,7 +375,7 @@ header {
 
 .about {
   text-align: left;
-  margin: 0 100px;
+  margin: 0 30px;
 }
 
 .about h2 {
@@ -385,6 +385,27 @@ header {
 .about p {
   line-height: 2;
 }
+
+.about img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  position:relative;
+}
+
+.about .fa-quote-left {
+  color: var(--v-bg-color);
+  font-size: 70px;
+  position: absolute;
+  left: 200px;
+}
+
+.about .btn.viola {
+  margin-right: 60%;
+  padding-left: 15px;
+}
+
 
 
 /* /ABOUT */
@@ -486,6 +507,18 @@ header {
 
   .benefit .btn.viola {
     margin-top: 15px;
+  }
+
+  
+
+  .about.testo-centrato {
+    width: 60%;
+  }
+
+  .about .row {
+    width: 40%;
+
+    
   }
 
 }
