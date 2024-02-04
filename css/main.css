@@ -62,8 +62,16 @@ body {
   margin-bottom: 20px;
 }
 
+.margin-bottom-big {
+  margin-bottom: 40px;
+}
+
 .padding-bottom {
   padding-bottom: 20px;
+}
+
+.padding-bottom-big {
+  padding-bottom: 40px;
 }
 
 .space-between {
@@ -131,6 +139,13 @@ body {
   padding: 10px 30px;
   border-radius: 20px;
 }
+
+.btn.white-big {
+  background-color: white;
+  color: rgb(151, 146, 228);
+  padding: 12px 70px;
+  font-weight: bold;
+ }
 
 img {
   width: 100%;
@@ -224,9 +239,9 @@ header {
   padding: 20px 20px 0 20px;
 }
 
-.demo .container {
+/* .demo .container {
   padding: 0 50px
-}
+} */
 
 .demo .card-big h3,
 .demo .card-small h3 {
@@ -258,7 +273,7 @@ header {
 }
 
 .planning .card-exbig{
-  padding: 30px;
+  /* padding: 30px; */
   margin: 0 auto;
 }
 
@@ -319,9 +334,9 @@ header {
   object-fit: cover;
 }
 
-.testimonial .row  {
+/* .testimonial .row  {
  margin: 0 50px;
-}
+} */
 
 .testimonial .row .card-media {
   width: 100%;
@@ -361,7 +376,7 @@ header {
   background-color: white;
   border-radius: 25px;
   padding: 40px;
-  margin: 10px 50px;
+  margin: 10px;
   height: 460px;
   width: 370px;
 }
@@ -417,7 +432,7 @@ header {
 }
 
 .free .card-small{
-  width: 55%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -436,7 +451,11 @@ header {
 .free p {
   color: white;
   text-align: center;
-  
+  margin: 0 30px;
+}
+
+.free .policy {
+  text-decoration: underline;
 }
 
 /* /FREE */
