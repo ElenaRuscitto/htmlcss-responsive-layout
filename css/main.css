@@ -61,6 +61,10 @@ body {
   margin-bottom: 20px;
 }
 
+.padding-bottom {
+  padding-bottom: 20px;
+}
+
 .space-between {
   justify-content: space-between;
 }
@@ -124,6 +128,7 @@ body {
  .btn.viola {
   background-color: rgb(151, 146, 228);
   padding: 7px 5px;
+  border-radius: 20px;
 }
 
 img {
@@ -215,6 +220,10 @@ header {
   color: var(--text-color-demo);
   border-radius: 20px;
   padding: 20px 20px 0 20px;
+}
+
+.demo .container {
+  padding: 0 50px
 }
 
 .demo .card-big h3,
@@ -309,7 +318,7 @@ header {
 }
 
 .testimonial .row  {
- margin: 0 100px;
+ margin: 0 50px;
 }
 
 .testimonial .row .card-media {
