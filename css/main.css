@@ -425,7 +425,7 @@ header {
   color: var(--v-bg-color);
   font-size: 70px;
   position: absolute;
-  right: 0;
+  left: 150px;
 }
 
 /* /ABOUT */
@@ -523,6 +523,10 @@ header {
     aspect-ratio: 1/2;
   }
 
+  .demo .row .card-big .dx img {
+    margin-top: 50px;
+  }
+
   .demo .colonna:nth-child(2) .card-small {
     height: 100%;
   }
@@ -571,8 +575,6 @@ header {
   
   .benefit .row .card-small {
     width: calc(100% / 2.5);
-    /* height: 410px;
-    margin: 10px; */
   }
 
   .benefit .btn .viola {
@@ -583,15 +585,20 @@ header {
     display: flex;
   }
 
-  .about.testo-centrato {
-    width: 370px;
+  .about .testo-centrato {
+    width: 55%;
     margin-right: 20px;
   }
 
   .about .row {
-    width: 210px;
+    width: 40%;
+    padding-bottom: 30px;
   }
 
+  .h2-small {
+    font-size: 2rem;
+   }
+ 
   .footer p{
     padding: 0 110px 20px;
   }
@@ -601,6 +608,11 @@ header {
 /* DISPLAY PC */
 
 @media screen and (min-width: 1200px){
+
+  .container {
+    width: 1200px;
+  }
+  
   .menu .lista .desktop {
     display: block;
   }
@@ -614,11 +626,11 @@ header {
     aspect-ratio: 3/1.45;
   }
 
-  .demo .row .card-big img {
+  .demo .row .card-big .dx img {
     width: 85.5%;
-    margin-top: 50px;
+    margin-top: 34px;
   }
-
+ 
   .demo .colonna .card-small {
     aspect-ratio: 1/1;
   }
@@ -683,7 +695,6 @@ header {
 
    .testimonial .card-media .right h4 {
     text-align: left;
- 
   }
 
   .testimonial .card-media .right h4 {
@@ -691,10 +702,6 @@ header {
  
   }
 
-  .container {
-    max-width: 1200px;
-  }
-  
   .benefit .row .card-small {
     width: calc(100% / 3.3);
   }
@@ -707,13 +714,26 @@ header {
     font-size: 1rem;
   }
   
-  
   .benefit .row .card-small p,a {
     font-size: 0.8rem;
   }
 
   .benefit .btn.viola {
     margin-top: 25px;
+  }
+
+  .about .testo-centrato {
+    width: 80%;
+  }
+
+  .about .row {
+    width: 30%;
+    line-height: 1;
+    padding-bottom: 120px;
+  }
+
+  .about h2 {
+   font-size: 2rem;
   }
 }
 
